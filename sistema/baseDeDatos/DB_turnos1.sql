@@ -54,7 +54,6 @@ CREATE  TABLE IF NOT EXISTS `turnos_odon`.`horario_x_turno` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-USE `turnos_odon` ;
 
 -- -----------------------------------------------------
 -- Table `turnos_odon`.`rol`
@@ -75,7 +74,7 @@ CREATE  TABLE IF NOT EXISTS `turnos_odon`.`usuario` (
   `password` VARCHAR(45) NULL ,
   `id_rol` INT NOT NULL ,
   `paciente_id_paciente` INT NOT NULL ,
-  PRIMARY KEY (`id_usuario`, `id_rol`, `paciente_id_paciente`) ,
+  PRIMARY KEY (`id_usuario`, `id_rol`) ,
   INDEX `fk_usuario_rol1_idx` (`id_rol` ASC) ,
   INDEX `fk_usuario_paciente1` (`paciente_id_paciente` ASC) ,
   CONSTRAINT `fk_usuario_rol1`
@@ -89,8 +88,6 @@ CREATE  TABLE IF NOT EXISTS `turnos_odon`.`usuario` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
 
 
 
