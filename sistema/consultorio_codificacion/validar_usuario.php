@@ -1,15 +1,15 @@
 ﻿<?php
 
-mysql_connect('localhost','root','')or die ('Ha fallado la conexión: '.mysql_error());
+mysql_connect('localhost','root','admin')or die ('Ha fallado la conexión: '.mysql_error());
 
-mysql_select_db('reserva_turno')or die ('Error al seleccionar la Base de Datos: '.mysql_error());
+mysql_select_db('turnos_odon')or die ('Error al seleccionar la Base de Datos: '.mysql_error());
   
 
 $usuario = htmlspecialchars($_POST["admin"]);   
 $password = htmlspecialchars($_POST["password_usuario"]);
  
 
-$result = mysql_query("SELECT * FROM administradores WHERE nombre_administrador = '".mysql_real_escape_string($usuario)."'");
+$result = mysql_query("SELECT * FROM usuario WHERE nick= '".mysql_real_escape_string($usuario)."'");
  
 
 if($row = mysql_fetch_array($result))

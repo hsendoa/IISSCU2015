@@ -21,7 +21,7 @@
 	
 	
     </head>
-    <body background=".jpg">
+    <body background="imagen/5.jpg">
 
 
 <?php ?>
@@ -65,7 +65,6 @@
         <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3" class="img-circle">
-                        <a href="#" class="thumbnail">
                             <img src="imagen/logo.png">
                         </a>
                     </div>

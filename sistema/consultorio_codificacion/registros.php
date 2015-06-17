@@ -17,10 +17,11 @@ if(!isset($_SESSION['usuario']))
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.css" rel="stylesheet">
+	<script src="js/jquery-1.2.6.js"></script>
         <link href="css/estilos.css" rel="stylesheet">
         <script src="js/responsive.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-1.2.6.js"></script>
+      
 
         <title>Consultorio Odontológico ORE</title>
          <style>
